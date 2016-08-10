@@ -2,7 +2,7 @@
 
 var expect = require('chai').expect;
 var MyComponent = require('./MyComponent.jsx');
-var MyComponentWithRouter = require('./MyComponentWithRouter');
+var MyComponentWithRouter = require('./MyComponentWithRouter.jsx');
 var React = require('react');
 import {shallow} from 'enzyme';
 
@@ -13,7 +13,7 @@ describe('With Router HoC Enzyme Compatiblity Tests', () => {
     var myComponentWrapper;
     var expectedCopy = 'I will displayed';
 
-    describe('Given a component not wrapped by the withRouter HoC', () => {
+    describe('Given a component not wrapped by the withRouter HOC', () => {
 
         beforeEach(() => {
 
@@ -31,7 +31,7 @@ describe('With Router HoC Enzyme Compatiblity Tests', () => {
         });
     });
 
-    describe('Given a component that is wrapped by the withRouter HoC', () => {
+    describe('Given a component that is wrapped by the withRouter HOC', () => {
 
         beforeEach(() => {
 
